@@ -1,0 +1,213 @@
+.Header {
+	max-width: 1920px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.HeaderContent {
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.Logo {
+	display: flex;
+	flex-direction: row;
+}
+.LogoText {
+	padding: 10px 10px 0;
+}
+.LogoHeader {
+	font-family: var(--font-Belleza);
+	color: var(--black100);
+	font-weight: 400;
+	font-size: 21.97px;
+	line-height: 25.31px;
+	margin: 0;
+}
+.LogoHeaderDescription {
+	color: #a6a6a6;
+	font-family: var(--font-Bellefair);
+	font-weight: 400;
+	font-size: 15.38px;
+	line-height: 17.63px;
+	margin: 0;
+}
+.HeaderLinks {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+
+.HeaderLinksButtons {
+	display: flex;
+}
+
+.someLinks {
+	font-family: var(--font-Jost);
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28.9px;
+	color: var(--black100);
+}
+
+.DropDownButton {
+	gap: 10px;
+}
+
+.ButtonIcon {
+	cursor: pointer;
+	width: 50px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	border: 1px solid var(--storke);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.customIcon {
+	width: 20px;
+	height: 20px;
+
+	fill: var(--black100); /* Bu faqat ba'zi SVG-lar uchun ishlaydi */
+}
+
+.CustomIconPhone {
+	width: 20px;
+	height: 20px;
+	fill: var(--white);
+}
+.PhoneCustomLink {
+	width: 50px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	outline: none;
+	border: none;
+	background-color: var(--black100);
+}
+
+.HeaderLinkbutton {
+	display: flex;
+	gap: 12px;
+}
+
+
+
+.DropDownButton {
+	cursor: pointer;
+	background-color: inherit;
+	display: flex;
+	align-items: center;
+	font-family: var(--font-Jost);
+	color: var(--black100);
+	font-size: 20px;
+	font-weight: 500;
+	border: none;
+	outline: none;
+
+	
+}
+.DropDownButtonIcon {
+	margin-top: 4px;
+	transform: rotate(270deg);
+	transition: transform 0.3s ease;
+
+}
+.DropDownButton {
+  position: relative;
+  cursor: pointer;
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-Jost);
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+}
+
+
+.active {
+  color: var(--bigie100);
+
+	.DropDownButtonIcon {
+		transition: transform 0.4s ease;
+		transform: rotate(90deg);
+	}
+}
+
+
+
+.dropMenu {
+	position: absolute;
+	top: 76px;
+	cursor: pointer;
+	width: 350px;
+	height: 188px;
+	display: flex;
+	flex-direction: column;
+}
+.dropdownMenuItem {
+	width: 100%;
+	height: 47px;
+	padding: 10px 0 0 16px;
+	a {
+		color: var(--black100);
+		font-family: var(--font-Jost);
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 26.01px;
+	}
+}
+.dropdownMenuItem:hover {
+	background-color: var(--bigie10);
+	a {
+		color: var(--bigie100);
+		font-family: var(--font-Jost);
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 26.01px;
+	}
+}
+
+
+/* LanguageSelect.module.css */
+.selectContainer {
+  position: relative;
+  width: 80px;
+}
+
+.customSelect {
+	text-align: center;
+  appearance: none; /* Remove default dropdown arrow */
+  width: 80px;
+  padding: 10px;
+  padding-right: 30px; /* Ensure space for the icon */
+  border: 1px solid #EAEAEA;
+  border-radius: 100px;
+	font-family: var(--font-Jost);
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28.9px;
+  font-family: var(--font-Jost);
+  cursor: pointer;
+  outline: none;
+}
+
+.customSelect option {
+  padding: 10px;
+}
+
+.selectIcon {
+	position: absolute;
+	top: 35%;
+	right: 20px;
+	transform: rotate(270deg);
+
+}
