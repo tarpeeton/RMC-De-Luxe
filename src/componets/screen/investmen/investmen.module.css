@@ -1,0 +1,57 @@
+.Investmen {
+	max-width: 1920px;
+	background-color: var(--BgBlue);
+	padding: 80px  240px;
+	display: flex;
+	gap: 142px;
+}
+.About {
+	width: 50%;
+	height: 629px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.Title {
+	font-family: var(--font-Jost);
+	font-size: 55px;
+	line-height: 70px;
+	font-weight: 500;
+	color: #000000;
+}
+.SubTitle {
+	font-size: 20px;
+	line-height: 28.9px;
+	font-family: var(--font-Jost);
+	font-weight: 400;
+
+}
+
+.Images {
+	width: 50%;
+	height: 668px;
+	position: relative;
+
+}
+.ImagesRigth {
+	width: 487px;
+	height: 585px;
+	position:absolute;
+	background-image: url('https://ucarecdn.com/4fea9398-3b86-44ac-9bfb-e74102cb8a9e/-/preview/1000x605/'); /* Rasm manzilini ko'rsating */
+	background-size: cover; /* Rasmni element o'lchamiga mos ravishda qirqadi */
+	background-position: center; /* Rasmni markazga joylashtiradi */
+	background-repeat: no-repeat; /* Rasmni takrorlanishiga yo'l qo'ymaydi */
+	right: 0;
+	
+}
+.ImagesLeft {
+	width: 227px;
+	height: 285px;
+	position:absolute;
+	left: 0;
+	bottom: 0;
+	background-image: url('https://ucarecdn.com/293a3b33-6901-4e70-982b-0b74d685cfe3/-/preview/1000x596/'); /* Rasm manzilini ko'rsating */
+	background-size: cover; /* Rasmni element o'lchamiga mos ravishda qirqadi */
+	background-position: center; /* Rasmni markazga joylashtiradi */
+	background-repeat: no-repeat; /* Rasmni takrorlanishiga yo'l qo'ymaydi */
+}
