@@ -1,0 +1,89 @@
+.About {
+	max-width: 1920px;
+	display: flex;
+	padding: 0 240px;
+	gap: 50px;
+}
+.AboutCont {
+	width: 100%;
+	padding: 140px 0;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.Info {
+	width: 100%;
+	height: 249px;
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+.ComponyName {
+	font-size: 55px;
+	line-height: 70px;
+	font-weight: 500;
+	font-family: var(--font-Jost);
+	color: var(--black100);
+	span {
+		color: var(--bigie100);
+	}
+}
+.container {
+	width: 710px;
+	margin: 0 auto;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 16px;
+}
+
+.tab {
+	padding: 12px 24px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: var(--font-Jost);
+	border: none;
+	background: none;
+	outline: none;
+	color: var(--black60);
+}
+
+.active {
+	color: var(--bigie100); /* Active tab color */
+	border-bottom: 3px solid var(--bigie100); /* Active tab underline */
+}
+
+.content {
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+}
+
+.Image {
+	width: 100%;
+	height: 579px;
+	position: relative;
+	background-image: url('https://ucarecdn.com/1737c696-8c39-42fc-ab49-ff8fab71ec26/-/preview/1000x666/');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ImageController {
+	position: absolute;
+	top: 35px;
+	left: 35px;
+}
+
+.tabsInfo {
+	font-size: 20px;
+	font-weight: 400;
+	font-family: var(--font-Jost);
+	color: var(--black100);
+	line-height: 28.9px;
+}

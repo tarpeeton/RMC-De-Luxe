@@ -12,9 +12,12 @@
   --bigie40: #F3DFD4;
   --bigie120: #B48C76;
   --bigie10: #FCF7F4;
+
   --black100: #333333;
   --black60: #858585;
   --black20: #D6D6D6;
+
+  
   --label: #B3B3B3;
   --storke: #EAEAEA;
   --bgGray: #F7F7F7;
@@ -29,8 +32,14 @@
 
 * {
   box-sizing: border-box;
+  outline: none;
+  padding: 0;
+  margin: 0;
 }
-
+html {
+  padding: 0;
+  margin: 0;
+} 
 a {
   text-decoration: none;
 }

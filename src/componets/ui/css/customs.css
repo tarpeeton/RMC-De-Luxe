@@ -1,0 +1,17 @@
+.customButton {
+	width: 223px;
+	height: 49px;
+	cursor: pointer;
+	background-color: var(--bigie100);
+	padding: 12px 16px;
+	gap: 10px;
+	text-align: center;
+	font-family: var(--font-Jost);
+	font-weight: 600 ;
+	color: var(--white);
+	font-size: 17px;
+	line-height: 24.57px;
+	outline: none;
+	border: none;
+}
+

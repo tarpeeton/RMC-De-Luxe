@@ -1,11 +1,13 @@
 import { FC, useState } from 'react'
 import style from './header.module.css'
+import DropDownMenu from './Dropdown'
+
+
 import { NavLink } from 'react-router-dom'
 import { CiSearch } from "react-icons/ci"
 import { CiHeart } from "react-icons/ci"
 import { FaPhoneAlt } from "react-icons/fa"
 import { MdNavigateBefore } from "react-icons/md"
-import DropDownMenu from './Dropdown'
 
 
 
