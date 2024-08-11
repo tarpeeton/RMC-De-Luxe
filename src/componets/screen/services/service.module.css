@@ -1,0 +1,50 @@
+.Services {
+	max-width: 1920px;
+	padding: 80px 240px;
+}
+
+.ServicesItem {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+.ServiceTitle {
+	width: 50%;
+
+}
+.Title {
+	font-family: var(--font-Jost);
+	font-size: 55px;
+	line-height: 70px;
+	font-weight: 500;
+}
+
+.advantages {
+	display: flex;
+
+	height: 575px;
+}
+
+
+.advantages__item {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	height: 115px;
+	border: 1px solid var(--storke);
+	border-left: none;
+}
+
+
+.advantages__icon {
+	width: 30px;
+	height: 30px;
+	background-color: var(--bigie100);
+	border-radius: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.icon {
+	color: var(--white);
+}

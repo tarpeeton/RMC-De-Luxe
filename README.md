@@ -16,6 +16,7 @@ git clone https://github.com/tarpeeton/RMC-De-Luxe
 
 npm install
 npm run dev
+```
 
-
-**https://github.com/tarpeeton**
+## 🔗❤️ Telegram ❤️🔗
+https://t.me/tot_rustem
