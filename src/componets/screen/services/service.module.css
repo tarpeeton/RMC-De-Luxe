@@ -1,6 +1,6 @@
 .Services {
 	max-width: 1920px;
-	padding: 80px 240px;
+	padding: 240px;
 }
 
 .ServicesItem {
@@ -21,10 +21,11 @@
 
 .advantages {
 	display: flex;
-
 	height: 575px;
 }
-
+.advantages__first {
+	width: 50%;
+}
 
 .advantages__item {
 	display: flex;
@@ -35,6 +36,24 @@
 	border-left: none;
 }
 
+.advantages__itemLast {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	padding-left: 20px;
+	height: 115px;
+	border: 1px solid var(--storke);
+	border-left: none;
+	border-right: none;
+}
+
+
+.Info {
+	font-size: 24px;
+	font-weight: 400;
+	color: var(--black100);
+	font-family: var(--font-Jost);
+}
 
 .advantages__icon {
 	width: 30px;

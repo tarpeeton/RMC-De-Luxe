@@ -10,43 +10,63 @@ const Services: FC = () => {
 				</div>
 				<div className={styles.advantages}>
 					{/* LEFT */}
-					<div>
+					<div className={styles.advantages__first}>
 						<div className={styles.advantages__item}>
 							<div className={styles.advantages__icon}>
 								<IoCheckmark className={styles.icon}/>
 							</div>
-							<div>Проверка арендаторов (кредитная история, рекомендации)</div>
+							<div className={styles.Info}>Проверка арендаторов (кредитная история, рекомендации)</div>
 						</div>
 						<div className={styles.advantages__item}>
 							<div className={styles.advantages__icon}>
 								<IoCheckmark className={styles.icon}/>
 							</div>
-							<div>Подготовка и подписание договоров аренды</div>
+							<div className={styles.Info}>Подготовка и подписание договоров аренды</div>
 						</div>
 						<div className={styles.advantages__item}>
 							<div className={styles.advantages__icon}>
 								<IoCheckmark className={styles.icon}/>
 							</div>
-							<div>Сбор арендной платы</div>
+							<div className={styles.Info}>Сбор арендной платы</div>
 						</div>
 						<div className={styles.advantages__item}>
 							<div className={styles.advantages__icon}>
 								<IoCheckmark className={styles.icon}/>
 							</div>
-							<div>Обработка запросов и жалоб арендаторов</div>
+							<div className={styles.Info}>Обработка запросов и жалоб арендаторов</div>
 						</div>
 						<div className={styles.advantages__item}>
 							<div className={styles.advantages__icon}>
 								<IoCheckmark className={styles.icon}/>
 							</div>
-							<div>Контроль соблюдения условий аренды</div>
+							<div className={styles.Info}>Контроль соблюдения условий аренды</div>
 						</div>
 					</div>
 					{/* RIGTH */}
-					<div>
-						<div className={styles.advantages__item}>
-							<div>Icon</div>
-							<div>Проверка арендаторов (кредитная история, рекомендации)</div>
+					<div className={styles.advantages__first}>
+					<div className={styles.advantages__itemLast}>
+							<div className={styles.advantages__icon}>
+								<IoCheckmark className={styles.icon}/>
+							</div>
+							<div className={styles.Info}>Регулярное техническое обслуживание</div>
+						</div>
+					<div className={styles.advantages__itemLast}>
+							<div className={styles.advantages__icon}>
+								<IoCheckmark className={styles.icon}/>
+							</div>
+							<div className={styles.Info}>Организация и проведение ремонтных работ</div>
+						</div>
+					<div className={styles.advantages__itemLast}>
+							<div className={styles.advantages__icon}>
+								<IoCheckmark className={styles.icon}/>
+							</div>
+							<div className={styles.Info}>Контроль за состоянием недвижимости</div>
+						</div>
+					<div className={styles.advantages__itemLast}>
+							<div className={styles.advantages__icon}>
+								<IoCheckmark className={styles.icon}/>
+							</div>
+							<div className={styles.Info}>Подбор надежных арендаторов</div>
 						</div>
 					</div>
 				</div>
