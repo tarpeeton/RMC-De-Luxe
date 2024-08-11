@@ -18,5 +18,11 @@ npm install
 npm run dev
 ```
 
+<<<<<<< HEAD
 ## 🔗❤️ Telegram ❤️🔗
 https://t.me/tot_rustem
+=======
+
+## 🔗❤️ Telegram ❤️🔗
+https://t.me/tot_rustem
+>>>>>>> 9bf90314d0f793990391403b3fc1096e8777dd07
