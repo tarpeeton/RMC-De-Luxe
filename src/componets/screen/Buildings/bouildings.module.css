@@ -17,6 +17,7 @@
 		line-height: 70px;
 		font-weight: 500;
 		font-family: var(--font-Jost);
+		color: var(--black100);
 	}
 }
 .Cards {

@@ -1,20 +1,22 @@
 .mortgage {
-	padding: 0 240px;
+	padding: 240px;
 	display: flex;
 	flex-direction: column;
+	gap: 40px;
 }
 .title {
-font-family: var(--font-Jost);
-font-size: 55px;
-font-weight: 500;
-line-height: 70px;
-text-align: left;
+	font-family: var(--font-Jost);
+	font-size: 55px;
+	font-weight: 500;
+	line-height: 70px;
+	text-align: left;
 }
 .calculator {
 	padding: 40px;
-    gap: 40px;
-    display: flex;
-    flex-direction: column;
+	gap: 40px;
+	display: flex;
+	box-shadow: 0px 0px 30px 0px rgba(15, 17, 18, 0.05);
+	flex-direction: column;
 }
 .result {
 	display: flex;
@@ -27,28 +29,26 @@ text-align: left;
 }
 /* Стоимость недвижимости (у.е.) */
 
-
-
 .form {
-  width: 100%;
-height: 100%;
-display: flex;
-flex-wrap: wrap;
-gap: 40px;
-
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
 }
 
 .label {
 	font-family: var(--font-Jost);
-	color: var(--storke);
+	color: var(--black60);
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 23.13px;
 }
 .input {
-padding: 12px 16px 12px 16px;
-gap: 10px;
-border: 1px 0px 0px 0px var(--storke);
+	padding: 12px 16px 12px 16px;
+	border: 1px solid var(--storke);
+	font-family: var(--font-Jost);
+	font-size: 18px;
 }
 .input__item {
 	width: 350px;
@@ -58,7 +58,7 @@ border: 1px 0px 0px 0px var(--storke);
 	gap: 8px;
 }
 .input::placeholder {
-	color: #B3B3B3;
+	color: #b3b3b3;
 	font-size: 18px;
 	font-family: var(--font-Jost);
 	line-height: 26.01px;
@@ -79,28 +79,25 @@ border: 1px 0px 0px 0px var(--storke);
 	background-color: var(--storke);
 }
 
-
-
 .info__item {
 	width: 218px;
 	height: 62px;
 }
 
 .info__item__title {
-font-family: var(--font-Jost);
-font-size: 18px;
-font-weight: 400;
-line-height: 26.01px;
-text-align: left;
-color: #B3B3B3; 
+	font-family: var(--font-Jost);
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 26.01px;
+	text-align: left;
+	color: #b3b3b3;
 }
-
 
 .info__item__subtitle {
 	font-family: var(--font-Jost);
 	font-size: 25px;
 	font-weight: 500;
 	line-height: 36.13px;
-	text-align: left; 
+	text-align: left;
 	color: var(--black100);
 }
