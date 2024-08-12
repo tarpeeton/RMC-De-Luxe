@@ -7,6 +7,7 @@ import AboutInvestment from './componets/screen/Investmen/investmen'
 import Services from './componets/screen/Services/service'
 import ChooseUs from './componets/screen/ChooseUS/choose'
 import Buildings from './componets/screen/Buildings/buildings'
+import MortgageCalc from './componets/screen/Mortgage/mortrage'
 
 
 const Home: FC = () => {
@@ -20,6 +21,7 @@ const Home: FC = () => {
         <Services />
         <ChooseUs />
         <Buildings />
+        <MortgageCalc />
       </BrowserRouter>
     </div>
   )

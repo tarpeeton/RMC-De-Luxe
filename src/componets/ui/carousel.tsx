@@ -1,44 +1,44 @@
-import { forwardRef, useImperativeHandle, useState, ForwardRefExoticComponent, RefAttributes } from 'react'
-import { IData } from '../../data/bouildings'
-import styles from '../screen/Buildings/bouildings.module.css'
-import { CiHeart } from 'react-icons/ci'
+import { forwardRef, useImperativeHandle, useState, ForwardRefExoticComponent, RefAttributes } from 'react';
+import { IData } from '../../data/bouildings';
+import styles from '../screen/Buildings/bouildings.module.css';
+import './css/carousel.css';
+import { CiHeart } from 'react-icons/ci';
 
 interface ICarousel {
-  cards: IData[]
+  cards: IData[];
 }
 
 export interface CarouselHandle {
-  nextSlide: () => void
-  prevSlide: () => void
+  nextSlide: () => void;
+  prevSlide: () => void;
 }
 
 const Carousel: ForwardRefExoticComponent<ICarousel & RefAttributes<CarouselHandle>> = forwardRef<CarouselHandle, ICarousel>(({ cards }, ref) => {
-  const [startIndex, setStartIndex] = useState(0)
+  const [startIndex, setStartIndex] = useState(0);
 
   const nextSlide = () => {
-    setStartIndex((prevIndex) =>
-      prevIndex === cards.length - 4 ? 0 : prevIndex + 1
-    )
-  }
+    setStartIndex((prevIndex) => (prevIndex === cards.length - 4 ? 0 : prevIndex + 1));
+  };
 
   const prevSlide = () => {
-    setStartIndex((prevIndex) =>
-      prevIndex === 0 ? cards.length - 4 : prevIndex - 1
-    )
-  }
+    setStartIndex((prevIndex) => (prevIndex === 0 ? cards.length - 4 : prevIndex - 1));
+  };
 
   useImperativeHandle(ref, () => ({
     nextSlide,
     prevSlide,
-  }))
+  }));
 
-  const visibleCards = cards.slice(startIndex, startIndex + 4)
+  const visibleCards = cards.slice(startIndex, startIndex + 4);
 
   return (
     <div className="carousel">
       <div className={styles.carousel_content}>
-        {visibleCards.map((card) => (
-          <div className={styles.CardItem} key={card.id}>
+        {visibleCards.map((card, index) => (
+          <div
+            className={`${styles.CardItem} ${index === 0 ? styles.active : ''}`}
+            key={card.id}
+          >
             <div>
               <CiHeart className={styles.Like} />
             </div>
@@ -56,8 +56,9 @@ const Carousel: ForwardRefExoticComponent<ICarousel & RefAttributes<CarouselHand
           </div>
         ))}
       </div>
+    
     </div>
-  )
-})
+  );
+});
 
-export default Carousel
+export default Carousel;
