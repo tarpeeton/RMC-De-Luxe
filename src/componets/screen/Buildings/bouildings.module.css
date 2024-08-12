@@ -8,6 +8,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 60px;
+  overflow: hidden;
 }
 
 
@@ -101,3 +102,33 @@
 }
 
 
+.carousel_content {
+  display: flex;
+  gap: 20px;
+}
+
+
+/* PREV NEXT CONTROLER */
+.ButtonController {
+  width: 148px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.button {
+  cursor: pointer;
+	width: 70px;
+	aspect-ratio: 1;
+	border: 1.5px solid var(--black100);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button__icon {
+  width: 17px;
+	color: var(--black100);
+}
