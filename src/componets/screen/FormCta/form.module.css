@@ -25,6 +25,11 @@
 		line-height: 70px;
 	}
 }
+.form__input__items {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
 .form__inputs {
 	display: flex;
 	flex-direction: column;
@@ -41,14 +46,26 @@
 	font-family: var(--font-Jost);
 	font-size: 18px;
 }
+
 .label {
-	margin-bottom: 5px;
+	position: absolute;
+  left: 10px;
+  top: 50%;
+	left: 0;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
 	font-family: var(--font-Jost);
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 26.01px;
 	text-align: left;
 }
+.labelFocused {
+  top: -7px;
+  font-size: 18px;
+  color: var(--black100);
+}
+
 .systemRed  {
 	color: var(--systemRed);
 }
