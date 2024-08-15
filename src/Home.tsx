@@ -8,7 +8,7 @@ import AboutCompony from './componets/screen/About/about'
 import AboutInvestment from './componets/screen/Investmen/investmen'
 import Services from './componets/screen/Services/service'
 import ChooseUs from './componets/screen/ChooseUS/choose'
-// import Buildings from './componets/screen/Buildings/buildings'
+import Buildings from './componets/screen/Buildings/buildings'
 // import MortgageCalc from './componets/screen/Mortgage/mortrage'
 // import FormCTA from './componets/screen/FormCta/foormCta'
 // import Blog from './componets/screen/Blog/blog'
@@ -25,8 +25,8 @@ const Home: FC = () => {
          <AboutInvestment /> 
           <Services /> 
         <ChooseUs />
-        {/* <Buildings />
-        <MortgageCalc />
+        <Buildings />
+        {/* <MortgageCalc />
         <FormCTA />
         <Blog/>
         <Footer/>  */}

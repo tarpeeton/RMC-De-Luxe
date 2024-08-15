@@ -35,10 +35,10 @@
 	width: 30px;
 	height: 30px;
 	position: absolute;
-	top: 15px;
-	right: 15px;
+	top: 16px;
+	right: 16px;
 	color: var(--white);
-	z-index: 999999;
+	z-index: 999;
 }
 
 .Image {
@@ -76,8 +76,8 @@
 }
 .name__price {
 	position: absolute;
-	bottom: 20px;
-	left: 20px;
+	bottom: 24px;
+	left: 24px;
 	color: var(--white);
 	z-index: 9999;
 }
@@ -127,4 +127,31 @@
 .button__icon {
 	width: 17px;
 	color: var(--black100);
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.Buildings {
+		margin-top: 200px;
+		padding: 0 20px;
+		gap: 40px;
+	}
+	
+	.ButtonController {
+		display: none;
+	}
+	.carousel_content {
+		gap: 12px;
+	}
+	.CardItem {
+		min-width: 356px;
+		height: 500px;
+	}  
+	.ButtonArea {
+		width: 100%;
+	}
+	.name__price {
+		bottom: 24px;
+		left: 24px;
+	}
 }
