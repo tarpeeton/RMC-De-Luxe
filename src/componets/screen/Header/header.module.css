@@ -1,9 +1,8 @@
 .Header {
-	max-width: 1920px;
 	height: 100px;
 	display: flex;
 	align-items: center;
-	padding: 0 240px;
+	padding: 20px 240px;
 }
 
 .HeaderContent {
@@ -44,7 +43,10 @@
 .HeaderLinksButtons {
 	display: flex;
 }
-
+.SelectLanguage__item {
+	display: flex;
+	margin-left: 12px;
+}
 .someLinks {
 	font-family: var(--font-Jost);
 	font-weight: 400;
@@ -71,7 +73,6 @@
 .customIcon {
 	width: 20px;
 	height: 20px;
-
 	fill: var(--black100); /* Bu faqat ba'zi SVG-lar uchun ishlaydi */
 }
 
@@ -80,7 +81,13 @@
 	height: 20px;
 	fill: var(--white);
 }
-.PhoneCustomLink {
+.HamburgerMenu {
+	width: 20px;
+	height: 20px;
+	color: var(--white);
+}
+
+.PhoneCustomLink  , .BurgerMenu{
 	width: 50px;
 	aspect-ratio: 1;
 	border-radius: 50%;
@@ -92,12 +99,13 @@
 	background-color: var(--black100);
 }
 
+.BurgerMenu {
+	display: none;
+}
 .HeaderLinkbutton {
 	display: flex;
 	gap: 12px;
 }
-
-
 
 .DropDownButton {
 	cursor: pointer;
@@ -110,39 +118,33 @@
 	font-weight: 500;
 	border: none;
 	outline: none;
-
-	
 }
 .DropDownButtonIcon {
 	margin-top: 4px;
 	transform: rotate(270deg);
 	transition: transform 0.3s ease;
-
 }
 .DropDownButton {
-  position: relative;
-  cursor: pointer;
-  background-color: inherit;
-  display: flex;
-  align-items: center;
-  font-family: var(--font-Jost);
-  font-size: 20px;
-  font-weight: 400;
-  border: none;
-  outline: none;
+	position: relative;
+	cursor: pointer;
+	background-color: inherit;
+	display: flex;
+	align-items: center;
+	font-family: var(--font-Jost);
+	font-size: 20px;
+	font-weight: 400;
+	border: none;
+	outline: none;
 }
 
-
 .active {
-  color: var(--bigie100);
+	color: var(--bigie100);
 
 	.DropDownButtonIcon {
 		transition: transform 0.4s ease;
 		transform: rotate(90deg);
 	}
 }
-
-
 
 .dropMenu {
 	z-index: 99999;
@@ -178,32 +180,31 @@
 	}
 }
 
-
 /* LanguageSelect.module.css */
 .selectContainer {
-  position: relative;
-  width: 80px;
+	position: relative;
+	width: 80px;
 }
 
 .customSelect {
 	text-align: center;
-  appearance: none; /* Remove default dropdown arrow */
-  width: 80px;
-  padding: 10px;
-  padding-right: 30px; /* Ensure space for the icon */
-  border: 1px solid #EAEAEA;
-  border-radius: 100px;
+	appearance: none; /* Remove default dropdown arrow */
+	width: 80px;
+	padding: 10px;
+	padding-right: 30px; /* Ensure space for the icon */
+	border: 1px solid #eaeaea;
+	border-radius: 100px;
 	font-family: var(--font-Jost);
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 28.9px;
-  font-family: var(--font-Jost);
-  cursor: pointer;
-  outline: none;
+	font-family: var(--font-Jost);
+	cursor: pointer;
+	outline: none;
 }
 
 .customSelect option {
-  padding: 10px;
+	padding: 10px;
 }
 
 .selectIcon {
@@ -211,5 +212,25 @@
 	top: 35%;
 	right: 20px;
 	transform: rotate(270deg);
+}
 
+
+/* RESPONSIVE */
+/* .Header */
+@media (min-width: 768px) and (max-width: 1024px) {
+	.Header {
+		padding: 20px;
+	}
+	.HeaderLinks {
+		display: none;
+	}
+	.PhoneCustomLink {
+		display: none;
+	}
+	.selectContainer {
+		display: none;
+	}
+	.BurgerMenu {
+		display: block;
+	}
 }

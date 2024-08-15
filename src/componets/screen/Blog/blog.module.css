@@ -1,9 +1,9 @@
 .blog {
-	height: 635px;
+	margin-top: 250px;
 	display: flex;
 	flex-direction: column;
 	gap: 60px;
-	padding: 240px;
+	padding: 0 240px;
 }
 
 .title {

@@ -102,7 +102,7 @@ const Footer: FC = () => {
 							Ипотечный калькулятор
 						</NavLink>
 						<NavLink to='sdfsd' className={styles.pages__link}>
-							Инвестиции в недвижимость в Дубае
+							Инвестиции в недвижимость <br/> в Дубае
 						</NavLink>
 					</div>
 				</div>

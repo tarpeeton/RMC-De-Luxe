@@ -1,22 +1,20 @@
 import { FC, useState } from 'react'
 import style from './header.module.css'
-import DropDownMenu from './Dropdown'
 
-
-import { NavLink } from 'react-router-dom'
 import { CiSearch } from "react-icons/ci"
 import { CiHeart } from "react-icons/ci"
 import { FaPhoneAlt } from "react-icons/fa"
-import { MdNavigateBefore } from "react-icons/md"
-
-
+import SelectLanguage from './language'
+import HeaderLinks from './HeaderLinks'
+import MenuButton from './MenuButton'
+import MenuItem from './MenuItem'
 
 
 const Header: FC = () => {
-
 	const [isDown, setIsDown] = useState(false)
-
-
+	const [open , setIsOpen] = useState(false)
+	console.log(open)
+	
 	return (
 		<div className={style.Header}>
 			<div className={style.HeaderContent}>
@@ -29,36 +27,10 @@ const Header: FC = () => {
 						<p className={style.LogoHeaderDescription}>real estate</p>
 					</div>
 				</div>
-				<div className={style.HeaderLinks}>
-					<div>
-						<button
-							className={`${style.DropDownButton} ${isDown ? style.active : ''}`}
-							onClick={() => setIsDown(!isDown)}
-						>
-							Услуги
-							<MdNavigateBefore
-								className={`${style.DropDownButtonIcon} ${isDown ? style.DropDownButtonIcon : ''}`}
-							/>
-						</button>
-
-						{isDown && <DropDownMenu />}
-					</div>
-					<div>
-						<NavLink className={style.someLinks} to='onas1'>
-							О нас
-						</NavLink>
-					</div>
-					<div>
-						<NavLink className={style.someLinks} to='onas2'>
-							Блог
-						</NavLink>
-					</div>
-					<div>
-						<NavLink className={style.someLinks} to='onas3'>
-							Контакты
-						</NavLink>
-					</div>
-				</div>
+				<HeaderLinks setIsDown={setIsDown} isDown={isDown} />
+				{
+					open && <MenuItem setIsDown={setIsDown} open={open} setIsOpen={setIsOpen} isDown={isDown}/>
+				}
 				<div className={style.HeaderLinksButtons}>
 					<div className={style.HeaderLinkbutton}>
 						<div>
@@ -77,18 +49,9 @@ const Header: FC = () => {
 								<FaPhoneAlt className={style.CustomIconPhone} />
 							</button>
 						</div>
+						<MenuButton setIsOpen={setIsOpen} open={open}/>
 					</div>
-
-					<div style={{ display: 'flex', marginLeft: '12px' }}>
-						<div className={style.selectContainer}>
-							<select className={style.customSelect}>
-								<option value="ru">Ru</option>
-								<option value="en">En</option>
-								<option value="uz">Uz</option>
-							</select>
-							<MdNavigateBefore className={style.selectIcon} />
-						</div>
-					</div>
+					<SelectLanguage/>
 				</div>
 			</div>
 		</div>

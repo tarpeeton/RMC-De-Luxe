@@ -1,7 +1,7 @@
 .Investmen {
-	max-width: 1920px;
+	margin-top: 250px;
 	background-color: var(--BgBlue);
-	padding: 80px  240px;
+	padding: 80px 240px;
 	display: flex;
 	gap: 142px;
 }

@@ -1,5 +1,6 @@
 .form {
-	padding: 240px;
+	margin-top: 260px;
+	padding: 0 240px;
 }
 .content {
 	background-color: var(--BgBlue);

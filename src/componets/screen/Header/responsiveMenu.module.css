@@ -1,0 +1,24 @@
+.Menu {
+    width: 50%;
+    height: 100vh;
+	padding: 0 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--storke);
+}
+
+.MenuActions {
+	display: flex;
+	align-items: center;
+	justify-content: end;
+}
+
+.HeaderLinks {
+	display: none;
+}
+
+
+
+
+
