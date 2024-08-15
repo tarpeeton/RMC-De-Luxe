@@ -6,7 +6,7 @@ const Services: FC = () => {
 		<div className={styles.Services}>
 			<div className={styles.ServicesItem}>
 				<div className={styles.ServiceTitle}>
-					<h2 className={styles.Title}>Что входит в услугу управления недвижимостью</h2>
+					<h2 className={styles.Title}>Что входит в услугу <br/> управления недвижимостью</h2>
 				</div>
 				<div className={styles.advantages}>
 					{/* LEFT */}

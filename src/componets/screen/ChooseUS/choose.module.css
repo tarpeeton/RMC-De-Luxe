@@ -56,7 +56,6 @@
 	opacity: 80%;
 }
 
-
 .choose__card__image {
 	width: 466px;
 	height: 326px;
@@ -64,5 +63,33 @@
 	img {
 		width: 100%;
 		height: 100%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.Choose {
+		margin-top: 200px;
+		padding: 0 20px;
+	}
+	.choose__cards {
+		gap: 16px;
+	}
+	.choose__title {
+		font-size: 45px;
+	}
+	.choose__card__text {
+		width: 356px;
+		height: 326px;
+	}
+	.choose__card__text__item {
+		width: 296px;
+		height: auto;
+	}
+	.choose__card__image {
+		width: 356px;
+		height: 326px;
+	}
+	.choose__cards:nth-child(4) {
+		order: 2;
 	}
 }

@@ -10,7 +10,6 @@
 }
 .ServiceTitle {
 	width: 50%;
-
 }
 .Title {
 	font-family: var(--font-Jost);
@@ -47,10 +46,10 @@
 	border-right: none;
 }
 
-
 .Info {
 	font-size: 24px;
 	font-weight: 400;
+	line-height: 34.68px;
 	color: var(--black100);
 	font-family: var(--font-Jost);
 }
@@ -66,4 +65,33 @@
 }
 .icon {
 	color: var(--white);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.Services {
+		height: 1177px;
+		margin-top: 200px;
+		padding: 0 20px;
+	}
+	.ServiceTitle {
+		width: 100%;
+	}
+	.Title {
+		font-size: 45px;
+	}
+	.advantages {
+		flex-direction: column;
+	}
+	.advantages__first {
+		width: 100%;
+	}
+	.advantages__itemLast {
+		width: 100%;
+		padding: 0;
+	}
+	.advantages__item {
+		border: 1px solid var(--storke);
+		border-left: 0;
+		border-right: 0;
+	}
 }
