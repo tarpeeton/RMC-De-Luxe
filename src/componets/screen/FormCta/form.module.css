@@ -50,11 +50,11 @@
 
 .label {
 	position: absolute;
-  left: 10px;
-  top: 50%;
+	left: 10px;
+	top: 50%;
 	left: 0;
-  transform: translateY(-50%);
-  transition: all 0.3s ease;
+	transform: translateY(-50%);
+	transition: all 0.3s ease;
 	font-family: var(--font-Jost);
 	font-size: 18px;
 	font-weight: 400;
@@ -62,12 +62,12 @@
 	text-align: left;
 }
 .labelFocused {
-  top: -7px;
-  font-size: 18px;
-  color: var(--black100);
+	top: -7px;
+	font-size: 18px;
+	color: var(--black100);
 }
 
-.systemRed  {
+.systemRed {
 	color: var(--systemRed);
 }
 .formImage {
@@ -79,4 +79,38 @@
 	background-size: cover;
 	backface-visibility: hidden;
 	background-clip: border-box;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.form {
+		height: 939px;
+		margin-top: 200px;
+		padding: 0 20px;
+	}
+	.content {
+		height: 100%;
+		flex-direction: column;
+		gap: 40px;
+		padding: 0;
+		justify-content: unset;
+		align-items: normal;
+	}
+	.formImage {
+		width: 100%;
+		height: 370px;
+		order: -1;
+		background-position: top;
+	}
+	.form__items {
+		width: 688px;
+        height: 499px;
+        gap: 30px;
+        padding: 0 20px 0 40px;
+		h2 {
+			font-size: 45px;
+			line-height: 50px;
+		}
+	}
+	.input {
+		width: 100%;
+	}
 }

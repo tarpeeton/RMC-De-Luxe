@@ -24,7 +24,7 @@ const FormCTA: FC = () => {
     <div className={styles.form}>
       <div className={styles.content}>
         <div className={styles.form__items}>
-          <h2>Остались вопросы? Свяжитесь с нами</h2>
+          <h2>Остались вопросы? <br/> Свяжитесь с нами</h2>
           <form className={styles.form__inputs}>
             <div className={styles.form__input__items}>
               <label
