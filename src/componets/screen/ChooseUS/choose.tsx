@@ -66,6 +66,9 @@ const ChooseUs: FC = () => {
 						</div>
 					</div>
 				</div>
+				<div className={styles.choose__card__image}>
+					<img src='https://ucarecdn.com/04febda0-213b-45d7-bec0-548dc86793d0/-/preview/1000x666/' alt='Image'/>
+				</div>
 			</div>
 		</div>
 	)
