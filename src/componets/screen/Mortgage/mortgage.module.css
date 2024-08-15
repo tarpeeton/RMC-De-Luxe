@@ -116,3 +116,24 @@
 	text-align: left;
 	color: var(--black100);
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+	.mortgage{
+		margin-top: 200px;
+		padding: 0 20px;
+		height: 643px;
+	}
+	.title {
+		font-size: 45px;
+		line-height: 50px;
+	}
+	.inputs {
+		width: 316px;
+		height: 384px;
+	}
+	.result {
+		gap: 40px;
+	}
+	.form  {
+		gap: 20px;
+	}
+}
