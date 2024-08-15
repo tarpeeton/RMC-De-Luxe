@@ -86,3 +86,35 @@
 	color: var(--black100);
 	line-height: 28.9px;
 }
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+	.About {
+		height: 878px;
+		margin: 200px 0 0 0 ;
+		padding: 0 20px;
+	}
+	.AboutCont {
+		justify-content: space-between;
+	}
+	.ComponyName {
+		font-size: 45px;
+		line-height: 50px;
+	}
+	.Info {
+		flex-direction: column;
+		gap: 40px;
+	}
+	.container {
+		width: 100%;
+		height: 244px;
+	}
+	.Image {
+		height: 454px;
+	}
+	.ImageController {
+		top: 24.76px;
+		left: 15.17px;
+	}
+ }

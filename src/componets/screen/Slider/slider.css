@@ -1,11 +1,12 @@
 .slider {
-	width: 100%;               /* Width: Fixed (1,920px) */
-	height: 800px;               /* Height: Fixed (800px) */
-	display: flex;   
-	position: relative;            /* Use flexbox for layout */
+	width: 100%; /* Width: Fixed (1,920px) */
+	height: 800px; /* Height: Fixed (800px) */
+	display: flex;
+	position: relative; /* Use flexbox for layout */
 	justify-content: space-between; /* Justify: space-between */
 	padding: 70px 240px 70px 240px; /* Padding: 70px, 240px, 70px, 24px */
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://ucarecdn.com/254d58e5-7e7e-49ad-939c-4a8b5350ef93/-/preview/999x681/');
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url('https://ucarecdn.com/254d58e5-7e7e-49ad-939c-4a8b5350ef93/-/preview/999x681/');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -27,6 +28,11 @@
 	flex-direction: column;
 	gap: 40px;
 }
+.slider__header-col {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
 .slider--header__title {
 	font-size: 80px;
 	font-weight: 500;
@@ -40,7 +46,6 @@
 	font-family: var(--font-Jost);
 	line-height: 28.9px;
 	color: var(--white);
-
 }
 .slidercontroller {
 	width: 148px;
@@ -63,4 +68,37 @@
 .slidercontroller--prev_icon {
 	width: 17px;
 	color: var(--white);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.slider {
+		padding: 0;
+		height: 924px;
+	}
+	.slider--content__bottom {
+		padding: 0 20px;
+		width: 100%;
+		position: absolute;
+		display: flex;
+		justify-content: space-between;
+		align-items: end;
+		bottom: 50px;
+	}
+	.slidercontroller {
+		width: 148px;
+		height: 70px;
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+	.slider--header {
+		width: 542px;
+		height: 340px;
+	}
+	.slider--header__title {
+		font-size: 65px;
+	}
+	.slider__header-col {
+		gap: 12px;
+	}
 }

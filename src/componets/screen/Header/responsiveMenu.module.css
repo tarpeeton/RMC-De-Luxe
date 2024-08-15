@@ -1,24 +1,141 @@
 .Menu {
-    width: 50%;
-    height: 100vh;
-	padding: 0 20px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: var(--storke);
+	width: 408px;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 999;
+	background-color: var(--white);
 }
-
 .MenuActions {
+	height: 100px;
+	padding: 0 20px;
 	display: flex;
 	align-items: center;
 	justify-content: end;
+	border-bottom: 1px solid var(--storke);
+}
+.MenuAction__flex__end {
+	display: flex;
+	gap: 10px;
+}
+.NavLinks_mobile_items {
+	margin-top: 25px;
+	padding-left: 24px;
+}
+.selectContainer {
+	position: relative;
+	width: 80px;
+}
+.customSelect {
+	text-align: center;
+	appearance: none; /* Remove default dropdown arrow */
+	width: 80px;
+	padding: 10px;
+	padding-right: 30px; /* Ensure space for the icon */
+	border: 1px solid #eaeaea;
+	border-radius: 100px;
+	font-family: var(--font-Jost);
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28.9px;
+	font-family: var(--font-Jost);
+	cursor: pointer;
+	outline: none;
+}
+.customSelect option {
+	padding: 10px;
+}
+
+.selectIcon {
+	position: absolute;
+	top: 35%;
+	right: 20px;
+	transform: rotate(270deg);
 }
 
 .HeaderLinks {
-	display: none;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+.DropDownButton {
+	cursor: pointer;
+	background-color: inherit;
+	display: flex;
+	align-items: center;
+	font-family: var(--font-Jost);
+	color: var(--black100);
+	font-size: 20px;
+	font-weight: 500;
+	border: none;
+	outline: none;
+}
+.DropDownButtonIcon {
+	margin-top: 4px;
+	transform: rotate(270deg);
+	transition: transform 0.3s ease;
+}
+.DropDownButton {
+	position: relative;
+	cursor: pointer;
+	background-color: inherit;
+	display: flex;
+	align-items: center;
+	font-family: var(--font-Jost);
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 34.68px;
+	border: none;
+	outline: none;
+}
+.active {
+	color: var(--bigie100);
+	.DropDownButtonIcon {
+		transition: transform 0.4s ease;
+		transform: rotate(90deg);
+	}
+}
+.dropMenu {
+	z-index: 99999;
+	top: 76px;
+	cursor: pointer;
+	width: 350px;
+	height: 188px;
+	display: flex;
+	flex-direction: column;
+}
+.dropdownMenuItem {
+	width: 100%;
+	height: 47px;
+	padding: 10px 0 0 16px;
+	a {
+		color: var(--black100);
+		font-family: var(--font-Jost);
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 28.9px;
+	}
+}
+.dropdownMenuItem:hover {
+	a {
+		color: var(--bigie100);
+		font-family: var(--font-Jost);
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 28.9px;
+	}
 }
 
-
-
-
-
+.someLinks {
+	font-family: var(--font-Jost);
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 34.68px;
+	color: var(--black100);
+}
+.ButtonQuestions {
+	position: absolute;
+	bottom: 24px;
+	left: 24px;
+}

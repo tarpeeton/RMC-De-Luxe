@@ -27,7 +27,7 @@ const Header: FC = () => {
 						<p className={style.LogoHeaderDescription}>real estate</p>
 					</div>
 				</div>
-				<HeaderLinks setIsDown={setIsDown} isDown={isDown} />
+				<HeaderLinks setIsDown={setIsDown} isDown={isDown}  />
 				{
 					open && <MenuItem setIsDown={setIsDown} open={open} setIsOpen={setIsOpen} isDown={isDown}/>
 				}

@@ -4,10 +4,16 @@
 	padding: 80px 240px;
 	display: flex;
 	gap: 142px;
+	position: relative;
 }
 .About {
-	width: 50%;
+	width: 710px;
 	height: 629px;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+.About__items {
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
@@ -24,34 +30,82 @@
 	line-height: 28.9px;
 	font-family: var(--font-Jost);
 	font-weight: 400;
-
 }
 
 .Images {
-	width: 50%;
+	height: 668px;
+	position: absolute;
+	left: 1092px;
+}
+.Image__cont {
+	width: 588px;
 	height: 668px;
 	position: relative;
-
 }
 .ImagesRigth {
 	width: 487px;
 	height: 585px;
-	position:absolute;
-	background-image: url('https://ucarecdn.com/4fea9398-3b86-44ac-9bfb-e74102cb8a9e/-/preview/1000x605/'); /* Rasm manzilini ko'rsating */
-	background-size: cover; /* Rasmni element o'lchamiga mos ravishda qirqadi */
-	background-position: center; /* Rasmni markazga joylashtiradi */
-	background-repeat: no-repeat; /* Rasmni takrorlanishiga yo'l qo'ymaydi */
+	position: absolute;
+	background: url("https://ucarecdn.com/4fea9398-3b86-44ac-9bfb-e74102cb8a9e/-/preview/1000x605/") center / cover no-repeat;
+
 	right: 0;
-	
 }
 .ImagesLeft {
 	width: 227px;
 	height: 285px;
-	position:absolute;
+	position: absolute;
 	left: 0;
 	bottom: 0;
-	background-image: url('https://ucarecdn.com/293a3b33-6901-4e70-982b-0b74d685cfe3/-/preview/1000x596/'); /* Rasm manzilini ko'rsating */
-	background-size: cover; /* Rasmni element o'lchamiga mos ravishda qirqadi */
-	background-position: center; /* Rasmni markazga joylashtiradi */
-	background-repeat: no-repeat; /* Rasmni takrorlanishiga yo'l qo'ymaydi */
+	background: url("https://ucarecdn.com/293a3b33-6901-4e70-982b-0b74d685cfe3/-/preview/1000x596/") center / cover no-repeat;
+}
+.subtitle__gap_col {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.Investmen {
+		height: 1061px;
+		margin-top: 200px;
+		gap: 60px;
+		padding: 50px 38px 50px 20px;
+		display: flex;
+		flex-direction: column;
+	}
+	.Title {
+		font-size: 45px;
+		line-height: 50px;
+	}
+	.About {
+		width: 100%;
+		gap: 50px;
+	}
+	.Images {
+		position: relative;
+		left: 0;
+		width: 100%;
+		height: 349px;
+		display: flex;
+		gap: 12px;
+	}
+	.Image__cont {
+		width: 100%;
+		height: 344px;
+	}
+	.ImagesRigth {
+		width: 349px;
+		height: 344px;
+		background-image: url('https://ucarecdn.com/293a3b33-6901-4e70-982b-0b74d685cfe3/-/preview/1000x596/');
+	}
+	.ImagesLeft {
+		width: 349px;
+		height: 344px;
+		background-image: url('https://ucarecdn.com/4fea9398-3b86-44ac-9bfb-e74102cb8a9e/-/preview/1000x605/');
+	}
+	.subtitle__gap_col {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
 }
