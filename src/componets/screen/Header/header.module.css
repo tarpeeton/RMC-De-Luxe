@@ -73,7 +73,7 @@
 .customIcon {
 	width: 20px;
 	height: 20px;
-	fill: var(--black100); /* Bu faqat ba'zi SVG-lar uchun ishlaydi */
+	fill: var(--black100);
 }
 
 .CustomIconPhone {
@@ -87,7 +87,8 @@
 	color: var(--white);
 }
 
-.PhoneCustomLink  , .BurgerMenu{
+.PhoneCustomLink,
+.BurgerMenu {
 	width: 50px;
 	aspect-ratio: 1;
 	border-radius: 50%;
@@ -214,7 +215,6 @@
 	transform: rotate(270deg);
 }
 
-
 /* RESPONSIVE */
 /* .Header */
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -232,5 +232,52 @@
 	}
 	.BurgerMenu {
 		display: block;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.Header {
+		padding: 16px;
+		height: 72px;
+	}
+	.HeaderLinks {
+		display: none;
+	}
+	.PhoneCustomLink {
+		display: none;
+	}
+	.Logo {
+		width: 142px;
+	}
+	.logoPicture {
+		width: 19px;
+		height: 48px;
+	}
+	.LogoHeader {
+		font-size: 17.63px;
+		line-height: 20.31px;
+	}
+	.LogoText {
+		padding: 7px 0 7px 7px;
+	}
+	.LogoHeaderDescription {
+		font-size: 12.34px;
+		line-height: 14.14px;
+		letter-spacing: -0.03em;
+	}
+	.selectContainer {
+		display: none;
+	}
+	.BurgerMenu {
+		display: block;
+	}
+	.HeaderLinkbutton {
+		width: 136px;
+		height: 40px;
+	}
+
+	.ButtonIcon,
+	.BurgerMenu {
+		width: 40px;
+		aspect-ratio: 1;
 	}
 }

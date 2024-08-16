@@ -20,7 +20,7 @@ const Header: FC = () => {
 			<div className={style.HeaderContent}>
 				<div className={style.Logo}>
 					<div>
-						<img src='https://ucarecdn.com/a6828876-c0b4-40b8-a8e5-61baf2951f3d/-/preview/26x61/' alt='Logo' />
+						<img className={style.logoPicture} src='https://ucarecdn.com/a6828876-c0b4-40b8-a8e5-61baf2951f3d/-/preview/26x61/' alt='Logo' />
 					</div>
 					<div className={style.LogoText}>
 						<p className={style.LogoHeader}>Rmc De Luxe</p>
