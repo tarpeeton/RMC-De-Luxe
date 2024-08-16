@@ -66,6 +66,12 @@
 .icon {
 	color: var(--white);
 }
+.advantages_checkmar_info {
+	height: 35px;
+	display: flex;
+	gap: 16px;
+	align-items: center;
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
 	.Services {
@@ -94,4 +100,56 @@
 		border-left: 0;
 		border-right: 0;
 	}
+}
+
+@media only screen and (max-width: 768px) { 
+	.Services {
+		height: 922px;
+		margin-top: 180px;
+		padding: 0 16px;
+	}
+	.ServicesItem {
+		gap: 40px;
+	}
+	.ServiceTitle {
+		width: 100%;
+	}
+	.Title {
+		font-size: 30px;
+		line-height: 38px;
+	}
+	.advantages {
+		flex-direction: column;
+		height: 768px;
+	}
+	.advantages__first {
+		width: 100%;
+	}
+	.advantages__item {
+		gap: 12px;
+		height: 92px;
+		border: 1px solid var(--storke);
+		border-left: 0;
+		border-right: 0;
+	}
+	.advantages__itemLast {
+		width: 100%;
+		padding: 0;
+		gap: 12px;
+	}
+	.advantages__icon {
+		width: 25px;
+		height: 25px;
+	}
+	
+	.Info {
+		width: 291px;
+		font-size: 18px;
+		line-height: 26.01px;
+	}
+	.advantages_checkmar_info {
+		height: 52px;
+		align-items: normal;
+	}
+	
 }
