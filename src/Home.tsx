@@ -12,7 +12,7 @@ import Buildings from './componets/screen/Buildings/buildings'
 import MortgageCalc from './componets/screen/Mortgage/mortrage'
 import FormCTA from './componets/screen/FormCta/foormCta'
 import Blog from './componets/screen/Blog/blog'
-// import Footer from './componets/screen/Footer/footer'
+import Footer from './componets/screen/Footer/footer'
 
 
 const Home: FC = () => {
@@ -29,7 +29,7 @@ const Home: FC = () => {
         <MortgageCalc />
         <FormCTA />
         <Blog/>
-        {/* <Footer/>  */}
+        <Footer/> 
       </BrowserRouter>
     </div>
   )

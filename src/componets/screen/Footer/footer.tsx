@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 
 
+
 const Footer: FC = () => {
 	return (
 		<div className={styles.footer}>
@@ -102,7 +103,7 @@ const Footer: FC = () => {
 							Ипотечный калькулятор
 						</NavLink>
 						<NavLink to='sdfsd' className={styles.pages__link}>
-							Инвестиции в недвижимость <br/> в Дубае
+							Инвестиции в недвижимость <br  className={styles.tabletNone}/> в Дубае
 						</NavLink>
 					</div>
 				</div>
