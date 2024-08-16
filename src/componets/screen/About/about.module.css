@@ -118,3 +118,51 @@
 		left: 15.17px;
 	}
  }
+
+ @media only screen and (max-width: 768px) {
+	.About {
+		height: 670px;
+		margin: 180px 0 0 0 ;
+		padding: 0 16px;
+		gap: 38px;
+	}
+	.AboutCont {
+		justify-content: space-between;
+	}
+	.ComponyName {
+		font-size: 35px;
+		line-height: 38px;
+	}
+	.tab {
+		font-size: 16px;
+		line-height: 23.12px;
+		padding: 0;
+		padding-bottom: 19px;
+	}
+	.active {
+		font-weight: 700;
+		border-bottom: 2px solid var(--bigie100);
+	}
+	.content {
+		height: 230px;
+	}
+	.tabsInfo {
+		font-size: 16px;
+		line-height: 23.12px;
+	}
+	.Info {
+		flex-direction: column;
+		gap: 40px;
+	}
+	.container {
+		width: 100%;
+		height: 284px;
+	}
+	.Image {
+		height: 240px;
+	}
+	.ImageController {
+		top: 12px;
+		left: 12px;
+	}
+ }
