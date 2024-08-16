@@ -119,3 +119,33 @@
 .link__button {
 	text-align: center;
 }
+
+.tabletMobileBlog {
+	display: none;
+}
+@media (min-width: 768px) and (max-width: 1024px) { 
+	.blog {
+		margin-top: 200px;
+		padding: 0 20px;
+		gap: 50px;
+	}
+	.title {
+		font-size: 45px;
+	}
+	.blog__content {
+		gap: 16px;
+		flex-wrap: wrap;
+	}
+	.blog__content__item {
+		width: 356px;
+		height: 385px;
+	}
+	.tabletMobileBlog {
+		display: flex;
+        gap: 20px;
+	}
+	.image__date {
+		height: 259.4px;
+	}
+
+}

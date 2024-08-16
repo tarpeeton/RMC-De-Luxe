@@ -70,6 +70,26 @@ const Blog: FC = () => {
 						</div>
 					</div>
 
+					<div className={`${styles.blog__content__item} ${styles.tabletMobileBlog}`}>
+						<div className={styles.image__date}>
+							<img className={styles.image} src='https://ucarecdn.com/ca6b3806-d5f2-450d-91b5-3816c20bad80/-/preview/1000x666/' alt='blog Image' />
+							<div className={styles.date}>31.07.2024</div>
+							<div className={styles.views}>
+								<LuEye className={styles.views__icon} />
+								<span className={styles.views__number}>899</span>
+							</div>
+						</div>
+						<div className={styles.content__title}>
+							<p>Элитные апартаменты становятся всё...</p>
+						</div>
+						<div className={styles.Link}>
+							<NavLink to="blog[1]">
+								Подробнее
+							</NavLink>
+							<GrFormNext className={styles.icon} />
+						</div>
+					</div>
+
 
 				</div>
 			</div>

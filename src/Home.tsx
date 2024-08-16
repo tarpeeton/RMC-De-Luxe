@@ -11,7 +11,7 @@ import ChooseUs from './componets/screen/ChooseUS/choose'
 import Buildings from './componets/screen/Buildings/buildings'
 import MortgageCalc from './componets/screen/Mortgage/mortrage'
 import FormCTA from './componets/screen/FormCta/foormCta'
-// import Blog from './componets/screen/Blog/blog'
+import Blog from './componets/screen/Blog/blog'
 // import Footer from './componets/screen/Footer/footer'
 
 
@@ -28,8 +28,8 @@ const Home: FC = () => {
         <Buildings />
         <MortgageCalc />
         <FormCTA />
-        {/* <Blog/>
-        <Footer/>  */}
+        <Blog/>
+        {/* <Footer/>  */}
       </BrowserRouter>
     </div>
   )
