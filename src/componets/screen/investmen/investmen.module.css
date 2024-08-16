@@ -23,7 +23,7 @@
 	font-size: 55px;
 	line-height: 70px;
 	font-weight: 500;
-	color: #000000;
+	color: var(--black100);
 }
 .SubTitle {
 	font-size: 20px;
@@ -46,7 +46,8 @@
 	width: 487px;
 	height: 585px;
 	position: absolute;
-	background: url("https://ucarecdn.com/4fea9398-3b86-44ac-9bfb-e74102cb8a9e/-/preview/1000x605/") center / cover no-repeat;
+	background: url('https://ucarecdn.com/4fea9398-3b86-44ac-9bfb-e74102cb8a9e/-/preview/1000x605/')
+		center / cover no-repeat;
 
 	right: 0;
 }
@@ -56,7 +57,8 @@
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	background: url("https://ucarecdn.com/293a3b33-6901-4e70-982b-0b74d685cfe3/-/preview/1000x596/") center / cover no-repeat;
+	background: url('https://ucarecdn.com/293a3b33-6901-4e70-982b-0b74d685cfe3/-/preview/1000x596/')
+		center / cover no-repeat;
 }
 .subtitle__gap_col {
 	display: flex;
@@ -107,5 +109,60 @@
 		display: flex;
 		flex-direction: column;
 		gap: 16px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.Investmen {
+		height: 949px;
+		margin-top: 180px;
+		padding: 0;
+	}
+	.Title {
+		font-size: 30px;
+		line-height: 38px;
+	}
+	.About {
+		width: 100%;
+		gap: 30px;
+		padding: 30px 16px;
+
+	}
+	.About__items {
+		gap: 16px;
+	}
+	.Images {
+		position: relative;
+		left: 0;
+		width: 100%;
+		height: 240px;
+		display: flex;
+		gap: 12px;
+	}
+	.Image__cont {
+		height: 240px;
+		display: flex;
+		gap: 12px;
+	}
+	.ImagesRigth {
+		width: 158px;
+		height: 240px;
+		position: relative;
+	}
+	.ImagesLeft {
+		width: 158px;
+		height: 240px;
+		position: relative;
+	}
+	.subtitle__gap_col {
+		order: 2;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		height: 462px;
+	}
+	.SubTitle {
+		font-size: 16px;
+		line-height: 23.12px;
 	}
 }

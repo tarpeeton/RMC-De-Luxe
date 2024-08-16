@@ -16,8 +16,7 @@ const AboutInvestment: FC = () => {
 
 					<p className={styles.SubTitle}>Наши услуги включают управление вашей инвестиционной недвижимостью, обеспечивая её сохранность и стабильный доход. Мы берем на себя все аспекты управления, включая подбор и проверку арендаторов, техническое обслуживание, финансовую отчетность и юридическую поддержку.</p>
 				</div>
-				</div>
-					<div className={styles.Images}>
+				<div className={styles.Images}>
 						<div className={styles.Image__cont}>
 						<div className={styles.ImagesRigth}>
 						</div>
@@ -26,6 +25,8 @@ const AboutInvestment: FC = () => {
 						</div>
 						
 					</div>
+				</div>
+				
 
 				<Button label='Подробнее' />
 			</div>
