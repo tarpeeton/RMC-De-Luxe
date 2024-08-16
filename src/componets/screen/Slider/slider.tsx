@@ -16,9 +16,10 @@ const SliderComponent: FC = () => {
 				<h1 className='slider--header__title'>Найдите идеальное место для жизни</h1>
 				<p className='slider--header__subtitle'>Откройте двери в новое будущее с нами</p>
 				</div>
+				<div className='customButtonSlider'>
 				<Button label='Подробнее'/>
+				</div>
 			</div>
-			
 			<PrevNextController />
 		</div>
 			</div>
