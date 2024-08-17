@@ -102,9 +102,9 @@
 	}
 	.form__items {
 		width: 688px;
-        height: 499px;
-        gap: 30px;
-        padding: 0 20px 0 40px;
+		height: 499px;
+		gap: 30px;
+		padding: 0 20px 0 40px;
 		h2 {
 			font-size: 45px;
 			line-height: 50px;
@@ -115,8 +115,7 @@
 	}
 }
 
-
-@media only screen and (max-width: 768px) { 
+@media only screen and (max-width: 768px) {
 	.form {
 		height: 683px;
 		margin-top: 180px;
@@ -138,9 +137,9 @@
 	}
 	.form__items {
 		width: 296px;
-        height: 433px;
-        gap: 20px;
-        padding: 0 16px;
+		height: 433px;
+		gap: 20px;
+		padding: 0 16px;
 		h2 {
 			width: 296px;
 			font-size: 30px;
@@ -152,7 +151,6 @@
 	}
 	.form__input__items {
 		width: 296px;
-
 		height: 47px;
 	}
 	.label {
@@ -166,5 +164,4 @@
 	.form__inputs {
 		gap: 20px;
 	}
-	
 }

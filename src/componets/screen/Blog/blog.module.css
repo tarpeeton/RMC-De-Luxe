@@ -33,28 +33,32 @@
 	gap: 20px;
 }
 .image__date {
-  height: 300px;
-  position: relative;
-  width: 100%;
+	height: 300px;
+	position: relative;
+	width: 100%;
 }
 
 .image__date::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom,rgba(0, 0, 0, 0.012) 12%, rgba(0, 0, 0, 0.4) 40%);
-  z-index: 1;
-  pointer-events: none;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0.012) 12%,
+		rgba(0, 0, 0, 0.4) 40%
+	);
+	z-index: 1;
+	pointer-events: none;
 }
 
 .image {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
-  position: relative;
+	position: relative;
 }
 .date {
 	position: absolute;
@@ -98,6 +102,11 @@
 	line-height: 30px;
 	text-align: left;
 }
+.content__title__link {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
 .Link {
 	display: flex;
 	align-items: center;
@@ -123,7 +132,7 @@
 .tabletMobileBlog {
 	display: none;
 }
-@media (min-width: 768px) and (max-width: 1024px) { 
+@media (min-width: 768px) and (max-width: 1024px) {
 	.blog {
 		margin-top: 200px;
 		padding: 0 20px;
@@ -142,10 +151,65 @@
 	}
 	.tabletMobileBlog {
 		display: flex;
-        gap: 20px;
+		gap: 20px;
 	}
 	.image__date {
 		height: 259.4px;
 	}
+}
 
+@media only screen and (max-width: 768px) {
+	.blog {
+		margin-top: 180px;
+		padding: 0 16px;
+		gap: 40px;
+	}
+	.title {
+		font-size: 30px;
+		line-height: 38px;
+	}
+	.blog__content {
+		gap: 30px;
+		flex-wrap: wrap;
+	}
+	.blog__content__item {
+		width: 356px;
+		height: 299px;
+	}
+	.tabletMobileBlog {
+		display: flex;
+		gap: 20px;
+	}
+	.date {
+		font-size: 16px;
+		line-height: 23.12px;
+		font-weight: 400;
+	}
+	.views {
+		.views__number {
+			font-size: 16px;
+			line-height: 23.12px;
+			font-weight: 400;
+		}
+		.views__icon {
+			width: 20px;
+			height: 20px;
+		}
+	}
+	.content__title__link {
+		gap: 4px;
+	}
+	.content__title {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.Link {
+		a {
+			font-size: 16px;
+			line-height: 23.12px;
+		}
+	}
+	.image__date {
+		height: 199px;
+	}
 }

@@ -20,6 +20,7 @@ const Blog: FC = () => {
 								<span className={styles.views__number}>899</span>
 							</div>
 						</div>
+						<div className={styles.content__title__link}>
 						<div className={styles.content__title}>
 							<p>Тенденции и прогнозы рынка недвижимости на 2024 год</p>
 						</div>
@@ -29,6 +30,8 @@ const Blog: FC = () => {
 							</NavLink>
 							<GrFormNext className={styles.icon} />
 						</div>
+						</div>
+						
 					</div>
 					<div className={styles.blog__content__item}>
 						<div className={styles.image__date}>
@@ -39,6 +42,8 @@ const Blog: FC = () => {
 								<span className={styles.views__number}>899</span>
 							</div>
 						</div>
+
+						<div className={styles.content__title__link}>
 						<div className={styles.content__title}>
 							<p>Лучшие районы для инвестиций в недвижимость</p>
 						</div>
@@ -47,6 +52,7 @@ const Blog: FC = () => {
 								Подробнее
 							</NavLink>
 							<GrFormNext className={styles.icon} />
+						</div>
 						</div>
 					</div>
 					<div className={styles.blog__content__item}>
@@ -58,6 +64,7 @@ const Blog: FC = () => {
 								<span className={styles.views__number}>899</span>
 							</div>
 						</div>
+						<div className={styles.content__title__link}>
 						<div className={styles.content__title}>
 							<p>Топ-10 новых <br />
 								жилых комплексов</p>
@@ -68,6 +75,8 @@ const Blog: FC = () => {
 							</NavLink>
 							<GrFormNext className={styles.icon} />
 						</div>
+						</div>
+						
 					</div>
 
 					<div className={`${styles.blog__content__item} ${styles.tabletMobileBlog}`}>
