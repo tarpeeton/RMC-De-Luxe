@@ -98,4 +98,4 @@ const Service: FC = () => {
 	)
 }
 
-export {Service}
+export default Service
