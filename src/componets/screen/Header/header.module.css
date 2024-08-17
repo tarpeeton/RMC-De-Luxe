@@ -85,6 +85,7 @@
 	width: 20px;
 	height: 20px;
 	color: var(--white);
+	
 }
 
 .PhoneCustomLink,
@@ -98,6 +99,7 @@
 	outline: none;
 	border: none;
 	background-color: var(--black100);
+
 }
 
 .BurgerMenu {
@@ -232,6 +234,9 @@
 	}
 	.BurgerMenu {
 		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 }
 @media only screen and (max-width: 768px) {
@@ -279,5 +284,8 @@
 	.BurgerMenu {
 		width: 40px;
 		aspect-ratio: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 }

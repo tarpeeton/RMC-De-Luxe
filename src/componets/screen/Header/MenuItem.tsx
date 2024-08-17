@@ -28,7 +28,10 @@ const MenuItem: FC<Imenu> = ({ setIsOpen, open, setIsDown, isDown }) => {
 							<MdNavigateBefore className={styles.selectIcon} />
 						</div>
 					</div>
+					<div className={styles.BurgerMenuItem}>
 					<MenuButton setIsOpen={setIsOpen} open={open} />
+
+					</div>
 				</div>
 			</div>
 			<div className={styles.NavLinks_mobile_items}>

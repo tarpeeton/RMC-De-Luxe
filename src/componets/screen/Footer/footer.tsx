@@ -45,66 +45,72 @@ const Footer: FC = () => {
 			</div>
 			<div className={styles.divider} />
 			<div className={styles.links}>
-				<div className={styles.column}>
-					<div className={styles.link__title}><span>Услуги</span></div>
-					<div className={styles.pages}>
-						<NavLink to='sdfsd' className={styles.pages__link}>
-							Купить
-						</NavLink>
-						<NavLink to='sdfsd' className={styles.pages__link}>
-							Арендовать
-						</NavLink>
-						<NavLink to='sdfsd' className={styles.pages__link}>
-							Продать
-						</NavLink>
-						<NavLink to='sdfsd' className={styles.pages__link}>
-							Оценить
-						</NavLink>
+
+
+				<div className={styles.column__top}>
+					<div className={styles.column}>
+						<div className={styles.link__title}><span>Услуги</span></div>
+						<div className={styles.pages}>
+							<NavLink to='sdfsd' className={styles.pages__link}>
+								Купить
+							</NavLink>
+							<NavLink to='sdfsd' className={styles.pages__link}>
+								Арендовать
+							</NavLink>
+							<NavLink to='sdfsd' className={styles.pages__link}>
+								Продать
+							</NavLink>
+							<NavLink to='sdfsd' className={styles.pages__link}>
+								Оценить
+							</NavLink>
+						</div>
+					</div>
+					<div className={styles.column}>
+						<div className={styles.link__title}><span>Недвижимость</span></div>
+						<div className={styles.pages}>
+							<NavLink to='sdfsd' className={styles.pages__link}>
+								Квартиры
+							</NavLink>
+							<NavLink to='sdfsd' className={styles.pages__link}>
+								Новостройки
+							</NavLink>
+							<NavLink to='sdfsd' className={styles.pages__link}>
+								Дома и участки
+							</NavLink>
+							<NavLink to='sdfsd' className={styles.pages__link}>
+								Коммерческая
+							</NavLink>
+						</div>
 					</div>
 				</div>
-				<div className={styles.column}>
-					<div className={styles.link__title}><span>Недвижимость</span></div>
-					<div className={styles.pages}>
-						<NavLink to='sdfsd' className={styles.pages__link}>
-							Квартиры
-						</NavLink>
-						<NavLink to='sdfsd' className={styles.pages__link}>
-							Новостройки
-						</NavLink>
-						<NavLink to='sdfsd' className={styles.pages__link}>
-							Дома и участки
-						</NavLink>
-						<NavLink to='sdfsd' className={styles.pages__link}>
-							Коммерческая
-						</NavLink>
+				<div className={styles.column_bottom}>
+					<div className={styles.column}>
+						<div className={styles.link__title}><span>Компания</span></div>
+						<div className={styles.pages}>
+							<NavLink to='sdfsd' className={styles.pages__link}>
+								О нас
+							</NavLink>
+							<NavLink to='sdfsd' className={styles.pages__link}>
+								Блог
+							</NavLink>
+							<NavLink to='sdfsd' className={styles.pages__link}>
+								Контакты
+							</NavLink>
+							<NavLink to='sdfsd' className={styles.pages__link}>
+								Связаться
+							</NavLink>
+						</div>
 					</div>
-				</div>
-				<div className={styles.column}>
-					<div className={styles.link__title}><span>Компания</span></div>
-					<div className={styles.pages}>
-						<NavLink to='sdfsd' className={styles.pages__link}>
-							О нас
-						</NavLink>
-						<NavLink to='sdfsd' className={styles.pages__link}>
-							Блог
-						</NavLink>
-						<NavLink to='sdfsd' className={styles.pages__link}>
-							Контакты
-						</NavLink>
-						<NavLink to='sdfsd' className={styles.pages__link}>
-							Связаться
-						</NavLink>
-					</div>
-				</div>
-				<div className={styles.column}>
-					<div className={styles.link__title}><span>Другое</span></div>
-					<div className={styles.pages}>
-						<NavLink to='sdfsd' className={styles.pages__link}>
-							Ипотечный калькулятор
-						</NavLink>
-						<NavLink to='sdfsd' className={styles.pages__link}>
-							Инвестиции в недвижимость <br  className={styles.tabletNone}/> в Дубае
-						</NavLink>
+					<div className={styles.column}>
+						<div className={styles.link__title}><span>Другое</span></div>
+						<div className={styles.pages}>
+							<NavLink to='sdfsd' className={styles.pages__link}>
+								Ипотечный калькулятор
+							</NavLink>
+							<NavLink to='sdfsd' className={styles.pages__link}>
+								Инвестиции в недвижимость <br className={styles.tabletNone} /> в Дубае
+							</NavLink>
+						</div>
 					</div>
 				</div>
 			</div>

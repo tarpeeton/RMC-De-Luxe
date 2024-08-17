@@ -139,3 +139,39 @@
 	bottom: 24px;
 	left: 24px;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+	.Menu {
+		width: 265px;
+	}
+	.MenuActions {
+		height: 72px;
+		align-items: center;
+	}
+	.BurgerMenuItem {
+		display: flex;
+		align-items: center;
+	}
+	.DropDownButton {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.dropdownMenuItem {
+		font-size: 16px;
+		line-height: 23.12px;
+	}
+	.someLinks {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.ButtonQuestions {
+		
+    bottom: 20px;
+    left: 20px;
+	button {
+		width: 175px;
+	}
+	}
+}

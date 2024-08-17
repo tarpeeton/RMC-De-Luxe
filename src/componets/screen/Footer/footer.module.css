@@ -92,6 +92,15 @@
 		color: var(--label);
 	}
 }
+.column__top {
+	display: flex;
+	gap: 138px;
+}
+.column_bottom {
+	display: flex;
+	gap: 138px;
+
+}
 .agencyLogo {
 	width: 130px;
 	height: 72px;
@@ -132,4 +141,96 @@
 	.copyrith {
 		height: 92px;
 	}
+	.column__top {
+		gap: 65px;
+	}
+.column_bottom {
+	gap: 65px;
+}
+}
+
+
+
+@media only screen and (max-width: 768px) {
+	.footer {
+		margin-top: 180px;
+		padding: 0 16px;
+	}
+	.compony_name {
+		font-size: 19.12px;
+		line-height: 22.02px;
+	}
+	.compony_estet {
+		font-size: 13.38px;
+		line-height: 15.34px;
+	}
+	.logo {
+		height: 101px;
+		justify-content: flex-start;
+		gap: 38px;
+	}
+	.logo__item {
+		width: 154px;
+		height: 52px;
+		gap: 7px;
+		img {
+			width: 21px;
+			height: 52px;
+		}
+	}
+	.social__links {
+		width: 136px;
+		height: 28px;
+		gap: 8px;
+
+	}
+	.icon__link {
+		width: 28px;
+		height: 28px;
+	}
+	.icon__width {
+		width: 28px;
+		height: 28px;
+	}
+
+
+	.links {
+		display: flex;
+		flex-wrap: wrap;
+		height: 380px;
+		gap: 35px;
+		padding-top: 30px;
+	}
+	.link__title {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.pages__link {
+		font-size: 16px;
+		line-height: 23.12px;
+	}
+	.column__top {
+		gap: 54px;
+	}
+.column_bottom {
+	gap: 48px;
+}
+	
+	.tabletNone {
+		display: none;
+	}
+	.copyrith {
+		height: 78px;
+		gap: 35px;
+		p {
+			width: 196px;
+			font-size: 14px;
+			line-height: 20.23px;
+		}
+		img {
+			width: 97px;
+			height: 54px;
+		}
+	}
+
 }

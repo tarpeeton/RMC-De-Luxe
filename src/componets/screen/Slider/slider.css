@@ -110,7 +110,7 @@
 		padding: 40px 16px 40px 16px;
 	}
 	.slider--content__bottom {
-		width: 100%;
+		width: 323px;
 		position: absolute;
 		display: flex;
 		flex-direction: column;

@@ -13,7 +13,6 @@ import MenuItem from './MenuItem'
 const Header: FC = () => {
 	const [isDown, setIsDown] = useState(false)
 	const [open , setIsOpen] = useState(false)
-	console.log(open)
 	
 	return (
 		<div className={style.Header}>

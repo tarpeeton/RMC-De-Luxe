@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import styles from './service.module.css'
 import { IoCheckmark } from "react-icons/io5"
+
 const Services: FC = () => {
 	return (
 		<div className={styles.Services}>

@@ -11,7 +11,7 @@ interface IMenuBUtton {
 
 const MenuButton: FC<IMenuBUtton> = ({ setIsOpen, open }) => {
 	return (
-		<div>
+		<div >
 			<button className={style.BurgerMenu} onClick={() => setIsOpen(!open)}>
 				{open ? <IoMdClose className={style.HamburgerMenu} />: <RxHamburgerMenu className={style.HamburgerMenu} />}
 				
