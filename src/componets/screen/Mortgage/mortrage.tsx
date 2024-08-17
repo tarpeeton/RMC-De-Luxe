@@ -40,6 +40,10 @@ const MortgageCalc: FC = () => {
 							/>
 						</form>
 					</div>
+					<div className={styles.mobile__button}>
+						<Button label="Рассчитать" />
+					</div>
+
 					<div className={styles.seperator} />
 					<div className={styles.info}>
 						<InfoItem title="Ежемесячный платеж" subtitle="4 410 у.е." />
@@ -48,7 +52,7 @@ const MortgageCalc: FC = () => {
 						<InfoItem title="Дата последнего платежа" subtitle="28 июля 2034 г" />
 					</div>
 				</div>
-				<div>
+				<div className={styles.desktop__button}>
 					<Button label="Рассчитать" />
 				</div>
 			</div>

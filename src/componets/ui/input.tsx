@@ -15,15 +15,17 @@ const InputField: FC<IFields> = ({ label, placeholder, inputProps }) => {
 
     return (
         <div className={styles.input__item}>
-            <label className={`${styles.label} ${isActive ? styles.Labelactive : ''}`}>{label}</label>
+            <div className={styles.input__item_fiels}>
+            <label className={`${styles.label} ${isActive ? styles.Labelactive : ''}  ${hasError ? styles.errorLabel : ''}`}>{label}</label>
             <input
-                className={`${styles.input} ${isActive ? styles.active : ''}`}
+                className={`${styles.input} ${isActive ? styles.active : ''} ${hasError ? styles.errorInput : ''}`}
                 placeholder={placeholder}
                 value={value}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
                 onChange={handleChange}
             />
+            </div>
             {hasError && <span className={styles.isError}>Это поле обязательно</span>}
         </div>
     );

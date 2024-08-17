@@ -62,7 +62,13 @@
 	height: 81px;
 	display: flex;
 	flex-direction: column;
+	gap: 4px;
+}
+.input__item_fiels {
+	display: flex;
+	flex-direction: column;
 	gap: 8px;
+
 }
 .input::placeholder {
 	color: #b3b3b3;
@@ -116,6 +122,15 @@
 	text-align: left;
 	color: var(--black100);
 }
+.mobile__button {
+	display: none;
+}
+.errorLabel {
+	color: var(--systemRed);
+}
+.errorInput {
+	border-color: var(--systemRed);
+}
 @media (min-width: 768px) and (max-width: 1024px) {
 	.mortgage{
 		margin-top: 200px;
@@ -136,4 +151,72 @@
 	.form  {
 		gap: 20px;
 	}
+	
+}
+
+@media only screen and (max-width: 768px) { 
+	.mortgage{
+		margin-top: 180px;
+		padding: 0 16px;
+	}
+	.title {
+		font-size: 30px;
+		line-height: 38px;
+	}
+	.calculator {
+		padding: 24px 20px;
+	}
+	.result {
+		flex-direction: column;
+		gap: 30px;
+	}
+	.form {
+		flex-direction: column;
+		flex-wrap: nowrap;
+		gap: 20px;
+	}
+	.inputs {
+		width: 288px;
+		height: 344px;
+		flex-direction: column;
+	}
+	.input__item {
+		width: 288px;
+		height: 71px;
+	}
+	.mobile__button {
+		display: block;
+	}
+	.desktop__button {
+		display: none;
+	}
+	.info {
+		width: 288px;
+		gap: 16px;
+		height: 296px;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	.info__item {
+		display: flex;
+		flex-direction: column;
+		gap: 3px;
+	}
+	.info__item__subtitle {
+		font-size: 22px;
+		line-height: 28px;
+
+	}
+	.isError {
+		display: none;
+	}
+	.info__item__title {
+		font-size: 16px;
+		line-height: 13.12px;
+	}
+	.seperator {
+		height: 1px;
+		width: 100%;
+	}
+	
 }
