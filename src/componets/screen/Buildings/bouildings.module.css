@@ -155,3 +155,62 @@
 		left: 24px;
 	}
 }
+
+@media only screen and (max-width: 768px) {
+	.Buildings {
+		margin-top: 180px;
+		padding: 0 16px;
+		gap: 25px;
+	}
+	.HeadingArrow {
+		h2 {
+			font-size: 30px;
+			line-height: 38px;
+		}
+	}
+	.ButtonController {
+		display: none;
+	}
+	
+	.carousel_content {
+		flex-direction: column;
+		gap: 12px;
+	}
+	.CardItem {
+		min-width: 328px;
+		height: 400px;
+	}
+	.name {
+		font-size: 28px;
+		line-height: 28px;
+	}
+	.name__price {
+		bottom: 20px;
+		left: 20px;
+	}
+	.price {
+		font-size: 16px;
+		line-height: 23.12px;
+	}
+	.ButtonArea {
+		width: 100%;
+	}
+	.CardItem:nth-child(2)  {
+		img {
+			object-position: 70% 0;
+
+		}
+	}
+	.CardItem:nth-child(3)  {
+		img {
+			object-position: 50% 0;
+
+		}
+	}
+	.CardItem:nth-child(4)  {
+		img {
+			object-position: 50% 0;
+
+		}
+	}
+}
