@@ -2,7 +2,7 @@ import { FC } from 'react'
 import styles from './service.module.css'
 import { IoCheckmark } from "react-icons/io5"
 
-const Services: FC = () => {
+const Service: FC = () => {
 	return (
 		<div className={styles.Services}>
 			<div className={styles.ServicesItem}>
@@ -98,4 +98,4 @@ const Services: FC = () => {
 	)
 }
 
-export default Services
+export {Service}

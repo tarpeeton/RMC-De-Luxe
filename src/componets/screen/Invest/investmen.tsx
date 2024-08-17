@@ -2,7 +2,7 @@ import { FC } from 'react'
 import styles from './investmen.module.css'
 import Button from '../../ui/button'
 
-const AboutInvestment: FC = () => {
+const Investmen: FC = () => {
 	return (
 		<div className={styles.Investmen}>
 			<div className={styles.About}>
@@ -35,4 +35,4 @@ const AboutInvestment: FC = () => {
 	)
 }
 
-export default AboutInvestment
+export default Investmen
