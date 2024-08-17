@@ -72,7 +72,6 @@
 	.Choose {
 		margin-top: 200px;
 		padding: 0 20px;
-
 	}
 	.choose__cards {
 		gap: 16px;
@@ -93,23 +92,23 @@
 		width: 356px;
 		height: 326px;
 	}
-	.choose__card__text:nth-child(1){
+	.choose__card__text:nth-child(1) {
 		order: -1;
 	}
 	.choose__card__image:nth-child(2) {
 		order: -1;
 	}
-	.choose__card__text:nth-child(7){
+	.choose__card__text:nth-child(7) {
 		order: 2;
 	}
-	.choose__card__text:nth-child(3){
+	.choose__card__text:nth-child(3) {
 		order: 0;
 	}
 	.choose__card__image:nth-child(4) {
 		order: -1;
 	}
 
-	.choose__card__image:nth-child(5){
+	.choose__card__image:nth-child(5) {
 		order: 2;
 	}
 	.choose__card__text:nth-child(6) {
@@ -125,6 +124,43 @@
 		display: block;
 		order: 2;
 	}
+}
 
+@media only screen and (max-width: 768px) {
+	.Choose {
+		margin-top: 280px;
+		padding: 0 16px;
+		gap: 25px;
+		height: 1811px;
+	}
+	.choose__title {
+		font-size: 30px;
+		line-height: 35px;
+	}
+	.choose__cards {
+		width: 100%;
+		gap: 16px;
+	}
+	.title {
+		font-size: 22px;
+		line-height: 28px;
+	}
+	.subtitle {
+		font-size: 16px;
+		line-height: 23.12px;
+	}
+	.choose__card__text {
+		width: 328px;
+		height: 180px;
+		padding: 24px 16px;
+	}
+	.choose__card__text__item {
+		gap: 12px;
+		width: 100%;
+	}
+	.choose__card__image {
+		width: 328px;
+		height: 180px;
+	}
 	
 }
